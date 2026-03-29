@@ -298,85 +298,115 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-6">
             {/* Service 1 */}
             <FadeInSection delay={0.1}>
-              <div className="glass-panel-hover glass-panel rounded-3xl p-8 h-full group relative overflow-hidden">
+              <div className="glass-panel-hover glass-panel rounded-3xl p-8 h-full group relative overflow-hidden flex flex-col">
                 <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6">
                   <Zap className="w-6 h-6 text-primary group-hover:drop-shadow-[0_0_10px_rgba(0,240,255,0.8)] transition-all" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4">AI Lead Generation</h3>
-                <p className="text-muted-foreground mb-6">Automated multi-channel prospecting engines that scrape data, enrich it, and deploy hyper-personalized messaging at scale across Email & LinkedIn.</p>
-                <a href="#contact" className="inline-flex items-center text-primary font-semibold hover:text-white transition-colors">
-                  Deploy this system <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                </a>
+                <p className="text-muted-foreground mb-6 flex-1">Automated multi-channel prospecting engines that scrape data, enrich it, and deploy hyper-personalized messaging at scale across Email & LinkedIn.</p>
+                <div className="flex items-center gap-5 flex-wrap">
+                  <a href="#contact" className="inline-flex items-center text-primary font-semibold hover:text-white transition-colors">
+                    Deploy this system <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </a>
+                  <Link href="/services/ai-lead-generation" className="inline-flex items-center px-4 py-1.5 rounded-full border border-primary/30 text-primary/80 text-sm font-medium hover:bg-primary/10 hover:text-primary transition-all">
+                    Learn More
+                  </Link>
+                </div>
               </div>
             </FadeInSection>
 
             {/* Service 2 */}
             <FadeInSection delay={0.2}>
-              <div className="glass-panel-hover glass-panel rounded-3xl p-8 h-full group relative overflow-hidden">
+              <div className="glass-panel-hover glass-panel rounded-3xl p-8 h-full group relative overflow-hidden flex flex-col">
                 <div className="w-14 h-14 rounded-full bg-secondary/10 flex items-center justify-center mb-6">
                   <MessageSquare className="w-6 h-6 text-secondary group-hover:drop-shadow-[0_0_10px_rgba(157,78,221,0.8)] transition-all" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4">AI Conversational Agents</h3>
-                <p className="text-muted-foreground mb-6">Custom-trained LLM assistants deployed on your website or SMS that qualify traffic, answer objections, and book qualified appointments directly.</p>
-                <a href="#contact" className="inline-flex items-center text-secondary font-semibold hover:text-white transition-colors">
-                  Deploy this system <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                </a>
+                <p className="text-muted-foreground mb-6 flex-1">Custom-trained LLM assistants deployed on your website or SMS that qualify traffic, answer objections, and book qualified appointments directly.</p>
+                <div className="flex items-center gap-5 flex-wrap">
+                  <a href="#contact" className="inline-flex items-center text-secondary font-semibold hover:text-white transition-colors">
+                    Deploy this system <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </a>
+                  <Link href="/services/ai-conversational-agents" className="inline-flex items-center px-4 py-1.5 rounded-full border border-secondary/30 text-secondary/80 text-sm font-medium hover:bg-secondary/10 hover:text-secondary transition-all">
+                    Learn More
+                  </Link>
+                </div>
               </div>
             </FadeInSection>
 
             {/* Service 3 */}
             <FadeInSection delay={0.3}>
-              <div className="glass-panel-hover glass-panel rounded-3xl p-8 h-full group relative overflow-hidden">
+              <div className="glass-panel-hover glass-panel rounded-3xl p-8 h-full group relative overflow-hidden flex flex-col">
                 <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6">
                   <Workflow className="w-6 h-6 text-primary group-hover:drop-shadow-[0_0_10px_rgba(0,240,255,0.8)] transition-all" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4">CRM & Pipeline Automation</h3>
-                <p className="text-muted-foreground mb-6">Seamless API integrations (Zapier/Make) that connect your entire toolstack. When a lead replies, your CRM updates, slack notifies, and sequences pause.</p>
-                <a href="#contact" className="inline-flex items-center text-primary font-semibold hover:text-white transition-colors">
-                  Deploy this system <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                </a>
+                <p className="text-muted-foreground mb-6 flex-1">Seamless API integrations (Zapier/Make) that connect your entire toolstack. When a lead replies, your CRM updates, slack notifies, and sequences pause.</p>
+                <div className="flex items-center gap-5 flex-wrap">
+                  <a href="#contact" className="inline-flex items-center text-primary font-semibold hover:text-white transition-colors">
+                    Deploy this system <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </a>
+                  <Link href="/services/crm-automation" className="inline-flex items-center px-4 py-1.5 rounded-full border border-primary/30 text-primary/80 text-sm font-medium hover:bg-primary/10 hover:text-primary transition-all">
+                    Learn More
+                  </Link>
+                </div>
               </div>
             </FadeInSection>
 
             {/* Service 4 */}
             <FadeInSection delay={0.4}>
-              <div className="glass-panel-hover glass-panel rounded-3xl p-8 h-full group relative overflow-hidden">
+              <div className="glass-panel-hover glass-panel rounded-3xl p-8 h-full group relative overflow-hidden flex flex-col">
                 <div className="w-14 h-14 rounded-full bg-secondary/10 flex items-center justify-center mb-6">
                   <LayoutTemplate className="w-6 h-6 text-secondary group-hover:drop-shadow-[0_0_10px_rgba(157,78,221,0.8)] transition-all" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4">Conversion Funnels</h3>
-                <p className="text-muted-foreground mb-6">High-converting landing pages and VSL funnels designed specifically to turn cold automated traffic into highly educated, ready-to-buy prospects.</p>
-                <a href="#contact" className="inline-flex items-center text-secondary font-semibold hover:text-white transition-colors">
-                  Deploy this system <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                </a>
+                <p className="text-muted-foreground mb-6 flex-1">High-converting landing pages and VSL funnels designed specifically to turn cold automated traffic into highly educated, ready-to-buy prospects.</p>
+                <div className="flex items-center gap-5 flex-wrap">
+                  <a href="#contact" className="inline-flex items-center text-secondary font-semibold hover:text-white transition-colors">
+                    Deploy this system <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </a>
+                  <Link href="/services/conversion-funnels" className="inline-flex items-center px-4 py-1.5 rounded-full border border-secondary/30 text-secondary/80 text-sm font-medium hover:bg-secondary/10 hover:text-secondary transition-all">
+                    Learn More
+                  </Link>
+                </div>
               </div>
             </FadeInSection>
 
             {/* Service 5 */}
             <FadeInSection delay={0.5}>
-              <div className="glass-panel-hover glass-panel rounded-3xl p-8 h-full group relative overflow-hidden">
+              <div className="glass-panel-hover glass-panel rounded-3xl p-8 h-full group relative overflow-hidden flex flex-col">
                 <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6">
                   <Megaphone className="w-6 h-6 text-primary group-hover:drop-shadow-[0_0_10px_rgba(0,240,255,0.8)] transition-all" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4">Social Media Marketing (SMMA)</h3>
-                <p className="text-muted-foreground mb-6">Full-service social media management powered by AI tools — organic growth, paid ad campaigns, audience targeting, and analytics dashboards that scale your brand across every platform.</p>
-                <a href="#contact" className="inline-flex items-center text-primary font-semibold hover:text-white transition-colors">
-                  Deploy this system <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                </a>
+                <p className="text-muted-foreground mb-6 flex-1">Full-service social media management powered by AI tools — organic growth, paid ad campaigns, audience targeting, and analytics dashboards that scale your brand across every platform.</p>
+                <div className="flex items-center gap-5 flex-wrap">
+                  <a href="#contact" className="inline-flex items-center text-primary font-semibold hover:text-white transition-colors">
+                    Deploy this system <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </a>
+                  <Link href="/services/smma" className="inline-flex items-center px-4 py-1.5 rounded-full border border-primary/30 text-primary/80 text-sm font-medium hover:bg-primary/10 hover:text-primary transition-all">
+                    Learn More
+                  </Link>
+                </div>
               </div>
             </FadeInSection>
 
             {/* Service 6 */}
             <FadeInSection delay={0.6}>
-              <div className="glass-panel-hover glass-panel rounded-3xl p-8 h-full group relative overflow-hidden">
+              <div className="glass-panel-hover glass-panel rounded-3xl p-8 h-full group relative overflow-hidden flex flex-col">
                 <div className="w-14 h-14 rounded-full bg-secondary/10 flex items-center justify-center mb-6">
                   <PenLine className="w-6 h-6 text-secondary group-hover:drop-shadow-[0_0_10px_rgba(157,78,221,0.8)] transition-all" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4">Content Creation</h3>
-                <p className="text-muted-foreground mb-6">AI-assisted content pipelines that produce SEO blogs, short-form video scripts, email sequences, and ad copy — published on autopilot to keep your brand top-of-mind every single day.</p>
-                <a href="#contact" className="inline-flex items-center text-secondary font-semibold hover:text-white transition-colors">
-                  Deploy this system <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                </a>
+                <p className="text-muted-foreground mb-6 flex-1">AI-assisted content pipelines that produce SEO blogs, short-form video scripts, email sequences, and ad copy — published on autopilot to keep your brand top-of-mind every single day.</p>
+                <div className="flex items-center gap-5 flex-wrap">
+                  <a href="#contact" className="inline-flex items-center text-secondary font-semibold hover:text-white transition-colors">
+                    Deploy this system <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </a>
+                  <Link href="/services/content-creation" className="inline-flex items-center px-4 py-1.5 rounded-full border border-secondary/30 text-secondary/80 text-sm font-medium hover:bg-secondary/10 hover:text-secondary transition-all">
+                    Learn More
+                  </Link>
+                </div>
               </div>
             </FadeInSection>
           </div>
