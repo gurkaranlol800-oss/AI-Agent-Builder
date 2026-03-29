@@ -16,7 +16,9 @@ import {
   BarChart3,
   Users,
   Target,
-  Hexagon
+  Hexagon,
+  Megaphone,
+  PenLine
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import ThreeScene from "@/components/ThreeScene";
@@ -344,6 +346,34 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4">Conversion Funnels</h3>
                 <p className="text-muted-foreground mb-6">High-converting landing pages and VSL funnels designed specifically to turn cold automated traffic into highly educated, ready-to-buy prospects.</p>
+                <a href="#contact" className="inline-flex items-center text-secondary font-semibold hover:text-white transition-colors">
+                  Deploy this system <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
+            </FadeInSection>
+
+            {/* Service 5 */}
+            <FadeInSection delay={0.5}>
+              <div className="glass-panel-hover glass-panel rounded-3xl p-8 h-full group relative overflow-hidden">
+                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+                  <Megaphone className="w-6 h-6 text-primary group-hover:drop-shadow-[0_0_10px_rgba(0,240,255,0.8)] transition-all" />
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4">Social Media Marketing (SMMA)</h3>
+                <p className="text-muted-foreground mb-6">Full-service social media management powered by AI tools — organic growth, paid ad campaigns, audience targeting, and analytics dashboards that scale your brand across every platform.</p>
+                <a href="#contact" className="inline-flex items-center text-primary font-semibold hover:text-white transition-colors">
+                  Deploy this system <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
+            </FadeInSection>
+
+            {/* Service 6 */}
+            <FadeInSection delay={0.6}>
+              <div className="glass-panel-hover glass-panel rounded-3xl p-8 h-full group relative overflow-hidden">
+                <div className="w-14 h-14 rounded-full bg-secondary/10 flex items-center justify-center mb-6">
+                  <PenLine className="w-6 h-6 text-secondary group-hover:drop-shadow-[0_0_10px_rgba(157,78,221,0.8)] transition-all" />
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4">Content Creation</h3>
+                <p className="text-muted-foreground mb-6">AI-assisted content pipelines that produce SEO blogs, short-form video scripts, email sequences, and ad copy — published on autopilot to keep your brand top-of-mind every single day.</p>
                 <a href="#contact" className="inline-flex items-center text-secondary font-semibold hover:text-white transition-colors">
                   Deploy this system <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </a>
