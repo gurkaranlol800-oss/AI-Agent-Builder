@@ -1,0 +1,167 @@
+Create a world-class, high-converting AI Automation Agency website for "AcquireZen" that combines the futuristic sophistication of AI companies with the high-conversion psychology of top marketing agencies.
+
+This is not a basic website. It must feel like a premium SaaS product + elite agency hybrid that can convert cold traffic into booked calls.
+
+CORE STRATEGY:
+
+* Combine AIAA (AI Automation Agency) design + SMMA conversion tactics
+* Make it visually futuristic but psychologically persuasive
+* Every section must guide the user toward booking a call
+
+---
+
+BRAND POSITIONING:
+
+* Name: AcquireZen
+* Tagline: "Double your clients — calmly & automatically"
+* Identity: Calm, powerful, intelligent automation
+* Feeling: Control, clarity, quiet dominance
+
+---
+
+DESIGN SYSTEM:
+
+Theme:
+
+* Dark mode (charcoal, deep navy — NOT pure black)
+* Glassmorphism panels with blur and transparency
+* Soft gradients + subtle noise texture
+
+Colors:
+
+* Primary: Deep blue / cyan (trust, intelligence)
+* Secondary: Electric purple (premium, futuristic)
+* Accent: Neon glow (buttons, CTA)
+* Optional contrast: subtle warm orange for urgency (very limited use)
+
+Typography:
+
+* Clean, modern sans-serif (minimal but bold)
+* Use kinetic typography (animated text typing or morphing)
+
+---
+
+3D & INTERACTION (CRITICAL):
+
+* Use Three.js for hero section
+* Create a floating abstract AI object (orb / neural network / particle system)
+* Object reacts to mouse movement (parallax + rotation)
+* Add glowing particles / energy waves in background
+* Scroll-based camera movement (depth illusion)
+
+Micro-interactions:
+
+* Cursor glow or light trail
+* Hover effects with smooth scaling + glow
+* Section transitions (fade, slide, parallax)
+
+---
+
+WEBSITE STRUCTURE (HIGH-CONVERSION FUNNEL):
+
+1. HERO SECTION:
+
+* Headline: "Double Your Clients. Automatically."
+* Subheadline: Clear, calm explanation of AI automation
+* CTA: "Book a Call" (primary), "See How It Works" (secondary)
+* 3D interactive object (centerpiece)
+* Optional: subtle animated text (AI typing effect)
+
+2. TRUST BANNER:
+
+* Scrolling logos or placeholders
+* Text: "Trusted by growing businesses"
+
+3. PAIN SECTION:
+
+* Highlight frustrations:
+
+  * Manual work
+  * Inconsistent leads
+  * Wasted time
+* Use emotional but clean UI
+
+4. SOLUTION (NEW MECHANISM):
+
+* Introduce AI automation system
+* Show "Before vs After" transformation
+* Use visual comparison blocks
+
+5. SERVICES:
+
+* AI Automation Systems
+* Lead Generation Systems
+* AI Chatbots
+* Website & Funnel Automation
+* Cards with glow hover effects
+
+6. HOW IT WORKS:
+
+* Step-based system:
+
+  1. Analyze
+  2. Build
+  3. Automate Growth
+* Use animated connectors or flow lines
+
+7. SOCIAL PROOF:
+
+* Case study cards
+* Metrics like "+200% leads"
+* Testimonials (UI placeholders)
+
+8. INTERACTIVE AI FEATURE (IMPORTANT):
+
+* Add a fake/demo AI chatbot UI on screen
+* It should simulate responses (to show capability)
+
+9. ABOUT:
+
+* Minimal, authority-driven
+* Focus on results, not story
+
+10. FAQ:
+
+* Handle objections (time, cost, complexity)
+
+11. FINAL CTA:
+
+* Strong emotional close:
+  "Let AI work while you sleep"
+* Embedded contact form or booking UI
+
+---
+
+ADVANCED FEATURES (WOW FACTOR):
+
+* Cursor glow effect
+* Light trails following mouse
+* Animated gradient borders
+* Floating UI elements
+* Background particle system
+* Subtle noise/grain overlay
+* Smooth scrolling (premium feel)
+
+---
+
+TECH REQUIREMENTS:
+
+* Use HTML, CSS, JavaScript
+* Use Three.js for 3D
+* Fully responsive (mobile-first)
+* Optimized performance (fast load)
+* Clean structured code (separate files)
+
+---
+
+FINAL GOAL:
+
+This website must feel like:
+
+* A $10,000+ AI agency website
+* A product built by a top-tier startup
+* Something that instantly builds trust and authority
+
+It should be visually stunning, highly interactive, and psychologically optimized to convert visitors into clients.
+
+Avoid generic templates. Make it unique, immersive, and premium.

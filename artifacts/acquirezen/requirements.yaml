@@ -1,0 +1,22 @@
+packages:
+  "three": "Required for the 3D neural network orb in the hero section"
+  "@types/three": "Type definitions for three.js"
+  "framer-motion": "Required for smooth scroll animations, text reveals, and page transitions"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility function to efficiently merge Tailwind CSS classes"
+
+images:
+  - path: "artifacts/acquirezen/public/images/avatar-1.png"
+    description: "Professional headshot of a confident male executive in a modern office, cinematic lighting"
+    aspect_ratio: "1:1"
+  - path: "artifacts/acquirezen/public/images/avatar-2.png"
+    description: "Professional headshot of a female tech founder with a warm smile, dark background with subtle neon lights"
+    aspect_ratio: "1:1"
+  - path: "artifacts/acquirezen/public/images/avatar-3.png"
+    description: "Professional headshot of a male marketing director, modern minimalist setting, high quality"
+    aspect_ratio: "1:1"
+
+notes:
+  - Frontend-only marketing website, no backend required for this deployment.
+  - Using Three.js for raw performance and custom control over the interactive 3D particle scene without the overhead of React Three Fiber.
+  - All form submissions are simulated.

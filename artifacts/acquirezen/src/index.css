@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme inline {
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  
+  --color-border: hsl(var(--border));
+  --color-ring: hsl(var(--ring));
+  
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-blob: blob 7s infinite;
+  --animate-glow: glow 2s ease-in-out infinite alternate;
+  --animate-border-spin: border-spin 4s linear infinite;
+}
+
+:root {
+  /* Dark futuristic premium palette */
+  --background: 225 25% 4%; /* Deep charcoal/navy #080b12 */
+  --foreground: 210 40% 98%; /* Off white */
+  
+  --primary: 190 100% 50%; /* Electric Cyan #00f0ff */
+  --primary-foreground: 225 25% 4%;
+  
+  --secondary: 270 100% 65%; /* Electric Purple #9d4edd */
+  --secondary-foreground: 210 40% 98%;
+  
+  --accent: 340 100% 60%; /* Neon Pink/Red for accents/urgency */
+  --accent-foreground: 210 40% 98%;
+
+  --card: 225 20% 8%;
+  --card-foreground: 210 40% 98%;
+  
+  --border: 225 20% 16%;
+  --ring: 190 100% 50%;
+  
+  --muted: 225 20% 12%;
+  --muted-foreground: 215 20% 65%;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased font-sans overflow-x-hidden;
+    background-image: 
+      radial-gradient(circle at 15% 50%, rgba(157, 78, 221, 0.04) 0%, transparent 50%),
+      radial-gradient(circle at 85% 30%, rgba(0, 240, 255, 0.04) 0%, transparent 50%);
+    background-attachment: fixed;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply font-bold tracking-tight;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes blob {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 10px rgba(0, 240, 255, 0.2), 0 0 20px rgba(0, 240, 255, 0.2); }
+  100% { box-shadow: 0 0 20px rgba(0, 240, 255, 0.6), 0 0 40px rgba(0, 240, 255, 0.4); }
+}
+
+@keyframes border-spin {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+/* Glassmorphism utilities */
+.glass-panel {
+  @apply bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] shadow-[0_8px_32px_0_rgba(0,0,0,0.3)];
+}
+
+.glass-panel-hover {
+  @apply transition-all duration-300 hover:bg-white/[0.04] hover:border-primary/30 hover:shadow-[0_8px_32px_0_rgba(0,240,255,0.1)];
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-primary/80 to-secondary/80;
+}
+
+.text-gradient-primary {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-white/10 rounded-full border-2 border-background;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-white/20;
+}
