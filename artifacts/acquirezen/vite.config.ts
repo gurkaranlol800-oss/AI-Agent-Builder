@@ -4,34 +4,21 @@ import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
-const rawPort = process.env.PORT;
-
-if (!rawPort) {
-  throw new Error(
-    "PORT environment variable is required but was not provided.",
-  );
-}
-
-const port = Number(rawPort);
-
-if (Number.isNaN(port) || port <= 0) {
-  throw new Error(`Invalid PORT value: "${rawPort}"`);
-}
-
-const basePath = process.env.BASE_PATH;
-
-if (!basePath) {
-  throw new Error(
-    "BASE_PATH environment variable is required but was not provided.",
-  );
-}
+// ✅ FIX: Remove strict env dependency
+const basePath = "/";
 
 export default defineConfig({
   base: basePath,
   plugins: [
     react(),
-    tailwindcss(),
+
+    // ✅ Disable lightningcss crash
+    tailwindcss({
+      optimize: false,
+    }),
+
     runtimeErrorOverlay(),
+
     ...(process.env.NODE_ENV !== "production" &&
     process.env.REPL_ID !== undefined
       ? [
@@ -49,7 +36,12 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "src"),
-      "@assets": path.resolve(import.meta.dirname, "..", "..", "attached_assets"),
+      "@assets": path.resolve(
+        import.meta.dirname,
+        "..",
+        "..",
+        "attached_assets",
+      ),
     },
     dedupe: ["react", "react-dom"],
   },
@@ -58,8 +50,10 @@ export default defineConfig({
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
   },
+
+  // ✅ FIX: No env dependency
   server: {
-    port,
+    port: 5173,
     host: "0.0.0.0",
     allowedHosts: true,
     fs: {
@@ -67,8 +61,9 @@ export default defineConfig({
       deny: ["**/.*"],
     },
   },
+
   preview: {
-    port,
+    port: 5173,
     host: "0.0.0.0",
     allowedHosts: true,
   },
