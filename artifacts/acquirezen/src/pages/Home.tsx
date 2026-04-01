@@ -716,9 +716,14 @@ export default function Home() {
             </Form>
             
             <div className="mt-8 text-center">
-              <a href="#" className="text-muted-foreground hover:text-white transition-colors text-sm flex items-center justify-center gap-2">
-                Prefer to talk first? Schedule directly on our calendar <ArrowRight className="w-4 h-4" />
-              </a>
+          <a 
+  href="https://calendly.com/gurkaranlol800"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-muted-foreground hover:text-white transition-colors text-sm flex items-center justify-center gap-2"
+>
+  Prefer to talk first? Schedule directly on our calendar <ArrowRight className="w-4 h-4" />
+</a>
             </div>
           </div>
         </div>
