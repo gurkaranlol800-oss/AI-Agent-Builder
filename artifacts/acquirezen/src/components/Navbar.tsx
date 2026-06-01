@@ -17,10 +17,10 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Services", href: "#services" },
-    { name: "How It Works", href: "#how-it-works" },
-    { name: "Case Studies", href: "#results" },
-    { name: "FAQ", href: "#faq" },
+    { name: "Services", href: "/#services" },
+    { name: "How It Works", href: "/#how-it-works" },
+    { name: "Case Studies", href: "/#results" },
+    { name: "FAQ", href: "/#faq" },
   ];
 
   return (
@@ -58,7 +58,7 @@ export default function Navbar() {
             ))}
           </div>
           <a
-            href="#contact"
+            href="/#contact"
             className="relative group px-6 py-2.5 rounded-full font-semibold text-sm bg-primary/10 text-primary border border-primary/50 overflow-hidden"
           >
             <span className="relative z-10 group-hover:text-primary-foreground transition-colors duration-300">
@@ -98,7 +98,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="#contact"
+                href="/#contact"
                 onClick={() => setIsMobileOpen(false)}
                 className="mt-4 w-full py-3 rounded-full font-semibold text-center bg-primary text-primary-foreground shadow-[0_0_20px_rgba(0,240,255,0.4)]"
               >
